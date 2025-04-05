@@ -3,5 +3,5 @@
 - [X]  Setup NestJS for backend
 - [ ]  Setup a MongoDB connection
 - [X]  Design DB Schema
-- [ ]  Add dummy data to DB
+- [X]  Add dummy data to DB
 - [ ]  <TO BE ADDED>...
