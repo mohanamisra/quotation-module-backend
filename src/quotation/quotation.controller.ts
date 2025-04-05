@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Patch, Post } from '@nestjs/common';
 import { QuotationService } from './quotation.service';
 
 @Controller('quotations')
@@ -13,5 +13,13 @@ export class QuotationController {
   @Post()
   async create(@Body() quotation: any) {
     return this.quotationService.create(quotation);
+  }
+
+  @Patch(':id')
+  async updateQuotation(
+    @Param('id') id: string,
+    @Body() updatedQuotation: any,
+  ) {
+    return this.quotationService.updateQuotation(id, updatedQuotation);
   }
 }
