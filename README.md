@@ -2,6 +2,6 @@
 ### To-Do List
 - [X]  Setup NestJS for backend
 - [ ]  Setup a MongoDB connection
-- [ ]  Design DB Schema
+- [X]  Design DB Schema
 - [ ]  Add dummy data to DB
 - [ ]  <TO BE ADDED>...
