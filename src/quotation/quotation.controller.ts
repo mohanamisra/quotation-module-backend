@@ -1,5 +1,6 @@
 import { Body, Controller, Get, Param, Patch, Post } from '@nestjs/common';
 import { QuotationService } from './quotation.service';
+import { ObjectId } from 'mongodb';
 
 @Controller('quotations')
 export class QuotationController {
@@ -8,6 +9,10 @@ export class QuotationController {
   @Get()
   async getAll() {
     return this.quotationService.getAllQuotations();
+  }
+  @Get(':quoteId')
+  async getQuote(@Param('quoteId') quoteId: string) {
+    return this.quotationService.getOneQuotation(new ObjectId(quoteId));
   }
 
   @Post()

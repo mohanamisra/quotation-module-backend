@@ -9,6 +9,10 @@ export class QuotationService {
     return this.db.collection('quotations').find().toArray();
   }
 
+  async getOneQuotation(quoteId: ObjectId) {
+    return this.db.collection('quotations').findOne({ _id: quoteId });
+  }
+
   async create(quotation: any) {
     const result = await this.db.collection('quotations').insertOne(quotation);
   }
