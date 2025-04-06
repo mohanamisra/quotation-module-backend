@@ -8,6 +8,6 @@
   - [X] Get All API endpoint
   - [X] Post Quotation API endpoint
   - [X] Update Quotation API endpoint
-- [ ] Integrate backend with frontend
+- [X] Integrate backend with frontend
+- [X] Implement 3rd party api endpoint
 - [ ] Deploy backend
-- [ ] <TO BE ADDED>...
