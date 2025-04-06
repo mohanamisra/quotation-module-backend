@@ -12,3 +12,4 @@
 - [X] Implement 3rd party api endpoint
 - [X] Deploy backend
 - [ ] Code clean-up + documentation
+- [ ] README documentation preparation + DB structure documentation
