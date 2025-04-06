@@ -11,3 +11,4 @@
 - [X] Integrate backend with frontend
 - [X] Implement 3rd party api endpoint
 - [X] Deploy backend
+- [ ] Code clean-up + documentation
