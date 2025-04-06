@@ -10,4 +10,4 @@
   - [X] Update Quotation API endpoint
 - [X] Integrate backend with frontend
 - [X] Implement 3rd party api endpoint
-- [ ] Deploy backend
+- [X] Deploy backend
