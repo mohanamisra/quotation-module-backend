@@ -40,8 +40,8 @@ Data can be accessed from the database through:
 - An HTTP GET request to get all quotations currently existing in the database
 - An HTTP GET request to get an individual quotation by its ID (the MongoDB system-provided `_id`)
 
-No provisions for data deletion exist in the current implementation. This is in keeping with the assignment specifications and mock wireframes. The DB Administrator can delete quotations. Note that adding a delete endpoint would be trivial as the implementation would be very similar to issuing any other HTTP request by `_id`.
-
+Data can be removed from the database through:
+- An HTTP DELETE request to delete an individual quotation by its ID (the MongoDB system-provided `_id`)  
 ***
 
 ### API Endpoints
@@ -63,6 +63,10 @@ https://quotation-module-backend.onrender.com/quotations
 ```bash
 https://quotation-module-backend.onrender.com/quotations/<QUOTATION_ID>
 # BODY OF THE REQUEST SHOULD BE A PROPERLY FORMATTED QUOTATION WITHOUT THE _id FIELD
+````
+- To DELETE an existing quotation
+```bash
+https://quotation-module-backend.onrender.com/quotations/<QUOTATION_ID>
 ```  
 ***
 
