@@ -2,6 +2,9 @@ import { Body, Controller, Get, Param, Patch, Post } from '@nestjs/common';
 import { QuotationService } from './quotation.service';
 import { ObjectId } from 'mongodb';
 
+// DEFINE WHICH FUNCTIONS VARIOUS HTTP REQUESTS WILL BE ROUTED TO
+// SELF-DOCUMENTING HTTP REQUESTS AND THEIR RETURN VALUES GIVEN BELOW
+
 @Controller('quotations')
 export class QuotationController {
   constructor(private readonly quotationService: QuotationService) {}

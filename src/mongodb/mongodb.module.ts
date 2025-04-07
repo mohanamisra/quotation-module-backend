@@ -2,6 +2,9 @@ import { Module } from '@nestjs/common';
 import { MongoClient } from 'mongodb';
 import { ConfigService } from '@nestjs/config';
 
+// CONCERNED WITH PROVIDING A DATABASE CONNECTION
+// NOTE: NEVER EXPOSE ENVIRONMENT VARIABLES. ALWAYS GET THEM FROM A .ENV FILE.
+
 @Module({
   providers: [
     {

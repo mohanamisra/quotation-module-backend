@@ -6,6 +6,8 @@ import { MongoDbModule } from './mongodb/mongodb.module';
 import { QuotationModule } from './quotation/quotation.module';
 import { CurrencyModule } from './currency/currency.module';
 
+// CHECK THAT ALL MODULES REQUIRED IN THE OVERALL BACKEND GET IMPORTED HERE
+
 @Module({
   imports: [
     ConfigModule.forRoot(),

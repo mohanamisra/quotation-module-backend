@@ -3,6 +3,8 @@ import { HttpService } from '@nestjs/axios';
 import { ConfigService } from '@nestjs/config';
 import { lastValueFrom } from 'rxjs';
 
+// GETS EXCHANGE RATES FOR CONVERSION FROM INR TO (BASE) USD
+
 @Injectable()
 export class CurrencyService {
   private cachedRate: string | null = null;
