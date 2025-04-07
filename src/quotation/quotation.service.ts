@@ -31,4 +31,8 @@ export class QuotationService {
       .collection('quotations')
       .updateOne({ _id: objId }, { $set: updatedQuotation });
   }
+
+  async deleteQuotation(quoteId: ObjectId) {
+    return this.db.collection('quotations').deleteOne({ _id: quoteId });
+  }
 }

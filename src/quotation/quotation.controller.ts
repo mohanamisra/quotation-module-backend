@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Patch, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Patch, Post } from '@nestjs/common';
 import { QuotationService } from './quotation.service';
 import { ObjectId } from 'mongodb';
 
@@ -29,5 +29,10 @@ export class QuotationController {
     @Body() updatedQuotation: any,
   ) {
     return this.quotationService.updateQuotation(id, updatedQuotation);
+  }
+
+  @Delete(':quoteId')
+  async deleteQuotation(@Param('quoteId') quoteId: string) {
+    return this.quotationService.deleteQuotation(new ObjectId(quoteId));
   }
 }
