@@ -23,6 +23,7 @@ export class QuotationService {
 
   async create(quotation: any) {
     const result = await this.db.collection('quotations').insertOne(quotation);
+    return result.insertedId;
   }
 
   async updateQuotation(id: string, updatedQuotation: any) {
